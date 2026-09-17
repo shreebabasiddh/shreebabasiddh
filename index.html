@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="hi">
+<html lang="hi" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>श्री बाबा सिद्ध मंदिर — सोना अर्जुनपुर, सहारनपुर (उ.प्र.)</title>
     <meta
       name="description"
-      content="श्री बाबा सिद्ध मंदिर, सोना अर्जुनपुर, सहारनपुर, उत्तर प्रदेश — आस्था, तपस्या और विश्वास की प्राचीन धरती। मंदिर इतिहास, सरोवर, मेला, दर्शन एवं यात्रा मार्ग।"
+      content="श्री बाबा सिद्ध मंदिर, सोना अर्जुनपुर, जनपद सहारनपुर (उत्तर प्रदेश) का आधिकारिक एवं सांस्कृतिक डिजिटल द्वार — आस्था, तपस्या और विश्वास की प्राचीन तपोभूमि।"
     />
     <meta
       name="keywords"
-      content="बाबा सिद्ध मंदिर, श्री बाबा सिद्ध मंदिर सोना अर्जुनपुर, सहारनपुर मंदिर, बाबा सिद्ध सरोवर, चंदन मिट्टी, 52वां विराट संत सम्मेलन, Saharanpur temple, Baba Siddh Mandir Sona Arjunpur"
+      content="बाबा सिद्ध मंदिर, श्री बाबा सिद्ध मंदिर सोना अर्जुनपुर, सहारनपुर मंदिर, बाबा सिद्ध सरोवर, चंदन मिट्टी, 52वां विराट संत सम्मेलन, Baba Siddh Mandir Sona Arjunpur"
     />
-    <meta name="author" content="श्री बाबा सिद्ध मंदिर प्रबंधन समिति" />
+    <meta name="author" content="श्री बाबा सिद्ध मंदिर प्रबंधन एवं सेवा समिति" />
     <meta name="robots" content="index, follow" />
 
-    <!-- OpenGraph Social Metadata -->
+    <!-- OpenGraph Metadata -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="श्री बाबा सिद्ध मंदिर — सोना अर्जुनपुर, सहारनपुर" />
     <meta
@@ -23,18 +23,8 @@
       content="जहाँ सदियों पुरानी आस्था, तपस्या और विश्वास आज भी जीवंत है। पवित्र समाधि स्थल, बाबा सिद्ध सरोवर, एवं वार्षिक मेले का पावन केंद्र।"
     />
     <meta property="og:site_name" content="श्री बाबा सिद्ध मंदिर, सोना अर्जुनपुर" />
-    <meta property="og:locale" content="hi_IN" />
-    <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="श्री बाबा सिद्ध मंदिर — सोना अर्जुनपुर, सहारनपुर" />
-    <meta
-      name="twitter:description"
-      content="आस्था, तपस्या और विश्वास की प्राचीन धरती। सोना अर्जुनपुर, जनपद सहारनपुर, उत्तर प्रदेश।"
-    />
-
-    <!-- Google Fonts for Devotional Devanagari & Latin Typography -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,7 +32,52 @@
       rel="stylesheet"
     />
 
-    <!-- Schema.org Structured Data (JSON-LD) -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saffron: {
+                50: '#fffbf5',
+                100: '#fef3e2',
+                200: '#fde4c3',
+                300: '#fbc995',
+                400: '#f79f58',
+                500: '#e07a2a',
+                600: '#c85e12',
+                700: '#a3480a',
+                800: '#84390e',
+                900: '#6c300f',
+              },
+              maroon: {
+                800: '#5c1b0c',
+                900: '#421106',
+                950: '#2c0a03',
+              },
+              ochre: {
+                100: '#fef3c7',
+                500: '#f59e0b',
+                600: '#d97706',
+                700: '#b45309',
+              }
+            },
+            fontFamily: {
+              devanagari: ['"Tiro Devanagari Hindi"', 'serif'],
+              display: ['"Rozha One"', '"Cinzel"', 'serif'],
+              yatra: ['"Yatra One"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            }
+          }
+        }
+      };
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,21 +94,1626 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "description": "सहारनपुर-शामली रेल मार्ग, निकट सहारनपुर (लगभग 20-22 किमी)"
+        "description": "सहारनपुर–शामली–दिल्ली रेल मार्ग, निकट सहारनपुर"
       },
       "publicAccess": true,
-      "isAccessibleForFree": true,
-      "event": {
-        "@type": "Festival",
-        "name": "वार्षिक मेला एवं संत सम्मेलन",
-        "description": "आषाढ़ और सावन मास के शनिवार एवं रविवार को आयोजित होने वाला पारंपरिक मेला एवं 52वां विराट संत सम्मेलन।"
-      }
+      "isAccessibleForFree": true
     }
     </script>
+
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #faf7f2;
+        color: #2c221e;
+      }
+      .font-hindi {
+        font-family: 'Tiro Devanagari Hindi', serif;
+      }
+      .font-display-sacred {
+        font-family: 'Rozha One', 'Cinzel', serif;
+      }
+      .pattern-temple {
+        background-image: radial-gradient(#e07a2a18 1px, transparent 1px), radial-gradient(#5c1b0c12 1px, #faf7f2 1px);
+        background-size: 28px 28px;
+        background-position: 0 0, 14px 14px;
+      }
+      @keyframes ringBell {
+        0%, 100% { transform: rotate(0deg); }
+        20% { transform: rotate(16deg); }
+        40% { transform: rotate(-14deg); }
+        60% { transform: rotate(8deg); }
+        80% { transform: rotate(-6deg); }
+      }
+      .ringing {
+        animation: ringBell 0.85s ease-in-out;
+        transform-origin: top center;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #e07a2a88;
+        border-radius: 4px;
+      }
+    </style>
   </head>
-  <body class="bg-[#FAF7F2] text-[#2C221E] antialiased selection:bg-[#E07A2A]/20 selection:text-[#7A2814]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="bg-[#FAF7F2] text-[#2C221E] antialiased selection:bg-[#E07A2A]/20 selection:text-[#7A2814] pattern-temple min-h-screen flex flex-col">
+
+    <!-- Top Notice Banner -->
+    <div id="notice-banner" class="bg-gradient-to-r from-maroon-900 via-maroon-800 to-saffron-800 text-amber-100 text-xs sm:text-sm py-2.5 px-4 shadow-md sticky top-0 z-50 transition-all duration-300">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2 overflow-hidden">
+          <span class="bg-saffron-500 text-white font-bold text-[10px] sm:text-xs px-2 py-0.5 rounded uppercase tracking-wider shrink-0 flex items-center gap-1">
+            <i data-lucide="bell" class="w-3 h-3"></i> <span id="txt-notice-tag">सूचना</span>
+          </span>
+          <p id="notice-content" class="truncate font-medium font-hindi text-amber-100/95">
+            आगामी वार्षिक मेले एवं 52वें विराट संत सम्मेलन के दौरान सरोवर की पवित्रता व स्वच्छता बनाए रखने में सहयोग करें।
+          </p>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button id="btn-toggle-notice" class="text-amber-200 hover:text-white p-1 rounded transition" title="Hide/Show Notice">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-amber-900/10 sticky top-[38px] z-40 shadow-sm transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          
+          <!-- Temple Brand -->
+          <a href="#hero" class="flex items-center gap-3.5 group text-left">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-saffron-500 via-ochre-500 to-maroon-800 p-0.5 shadow-md group-hover:scale-105 transition transform flex items-center justify-center">
+              <div class="w-full h-full rounded-full bg-amber-50 flex items-center justify-center text-maroon-900 font-bold text-xl border border-amber-200">
+                ॐ
+              </div>
+            </div>
+            <div>
+              <span class="block font-display-sacred font-bold text-lg sm:text-xl text-maroon-900 leading-tight group-hover:text-saffron-600 transition" id="nav-brand-title">
+                श्री बाबा सिद्ध मंदिर
+              </span>
+              <span class="block text-xs sm:text-sm text-amber-800 font-hindi font-medium" id="nav-brand-subtitle">
+                सोना अर्जुनपुर, सहारनपुर (उ.प्र.)
+              </span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-amber-950 font-hindi">
+            <a href="#overview" class="hover:text-saffron-600 transition py-1" id="nav-item-overview">मंदिर परिचय</a>
+            <a href="#history" class="hover:text-saffron-600 transition py-1" id="nav-item-history">इतिहास व परंपरा</a>
+            <a href="#sarovar" class="hover:text-saffron-600 transition py-1" id="nav-item-sarovar">पवित्र सरोवर</a>
+            <a href="#mela" class="hover:text-saffron-600 transition py-1" id="nav-item-mela">वार्षिक मेला</a>
+            <a href="#gallery" class="hover:text-saffron-600 transition py-1" id="nav-item-gallery">दर्शन छायाचित्र</a>
+            <a href="#institutions" class="hover:text-saffron-600 transition py-1" id="nav-item-education">शिक्षा संस्थान</a>
+            <a href="#prayers" class="hover:text-saffron-600 transition py-1" id="nav-item-prayers">मनोकामना पटल</a>
+            <a href="#travel" class="hover:text-saffron-600 transition py-1" id="nav-item-travel">यात्रा मार्ग</a>
+          </nav>
+
+          <!-- Action Buttons -->
+          <div class="flex items-center gap-2 sm:gap-3">
+            <!-- Temple Bell Chime -->
+            <button
+              id="bell-button"
+              onclick="playTempleBell()"
+              class="relative flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 hover:bg-amber-200 text-maroon-900 border border-amber-300 shadow-sm transition transform hover:scale-105 active:scale-95"
+              title="मंदिर की पावन घंटी बजाएं (Play Sacred Bell)"
+            >
+              <i id="bell-icon" data-lucide="bell" class="w-5 h-5 text-maroon-800"></i>
+            </button>
+
+            <!-- Language Switcher -->
+            <button
+              id="lang-toggle-btn"
+              onclick="toggleLanguage()"
+              class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-maroon-900 border border-amber-200 text-xs sm:text-sm font-semibold transition"
+            >
+              <i data-lucide="languages" class="w-4 h-4 text-saffron-600"></i>
+              <span id="lang-btn-label">English</span>
+            </button>
+
+            <!-- Admin Portal Trigger -->
+            <button
+              onclick="openAdminModal()"
+              class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-maroon-900 hover:bg-maroon-800 text-amber-100 text-xs sm:text-sm font-medium transition shadow"
+              id="btn-admin-nav"
+            >
+              <i data-lucide="shield-check" class="w-4 h-4 text-saffron-400"></i>
+              <span>समिति प्रबंधन</span>
+            </button>
+
+            <!-- Mobile Hamburger -->
+            <button
+              id="mobile-menu-btn"
+              onclick="toggleMobileMenu()"
+              class="lg:hidden p-2 rounded-lg text-maroon-900 hover:bg-amber-100 transition"
+              aria-label="Toggle Menu"
+            >
+              <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+              <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-amber-50/98 border-b border-amber-200 px-4 pt-3 pb-6 font-hindi shadow-xl space-y-2">
+        <a href="#overview" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">मंदिर परिचय</a>
+        <a href="#history" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">इतिहास व परंपरा</a>
+        <a href="#sarovar" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">पवित्र सरोवर</a>
+        <a href="#mela" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">वार्षिक मेला</a>
+        <a href="#gallery" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">दर्शन छायाचित्र</a>
+        <a href="#institutions" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">शिक्षा संस्थान</a>
+        <a href="#prayers" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">मनोकामना पटल</a>
+        <a href="#travel" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-amber-100 text-maroon-950 font-medium">यात्रा मार्ग</a>
+        <div class="pt-2 border-t border-amber-200">
+          <button onclick="openAdminModal(); closeMobileMenu();" class="w-full text-left py-2 px-3 rounded-md bg-maroon-900 text-amber-100 font-medium flex items-center justify-between">
+            <span>समिति प्रबंधन पोर्टल</span>
+            <i data-lucide="lock" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow">
+
+      <!-- SECTION 1: HERO SECTION -->
+      <section id="hero" class="relative overflow-hidden pt-12 pb-16 lg:pt-20 lg:pb-24 bg-gradient-to-b from-amber-100/60 via-amber-50/40 to-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          <div class="text-center max-w-4xl mx-auto">
+            
+            <!-- Sacred Om & Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300/80 text-maroon-900 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+              <span id="hero-live-status">दर्शन जारी है: प्रातः 05:00 — रात्रि 08:30</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-maroon-950 font-display-sacred tracking-tight leading-tight mb-4" id="hero-title">
+              श्री बाबा सिद्ध मंदिर
+            </h1>
+
+            <p class="text-lg sm:text-2xl font-bold text-saffron-700 font-hindi mb-6" id="hero-subtitle">
+              सोना अर्जुनपुर, जनपद सहारनपुर (उत्तर प्रदेश)
+            </p>
+
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-saffron-500 to-transparent mx-auto mb-6"></div>
+
+            <p class="text-base sm:text-xl text-stone-700 font-hindi max-w-3xl mx-auto leading-relaxed mb-8" id="hero-quote">
+              "जहाँ सदियों पुरानी तपस्या, अखंड विश्वास और सिद्ध साधना की पवित्र धारा आज भी प्रत्येक श्रद्धालु को असीम शांति व संबल प्रदान करती है।"
+            </p>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4 text-sm sm:text-base font-hindi">
+              <a href="#overview" class="px-6 py-3 rounded-xl bg-gradient-to-r from-saffron-600 to-maroon-900 hover:from-saffron-700 hover:to-maroon-950 text-white font-semibold shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2" id="hero-btn-darshan">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+                <span>दर्शन व आरती समय</span>
+              </a>
+              <a href="#sarovar" class="px-6 py-3 rounded-xl bg-white hover:bg-amber-50 text-maroon-900 border border-amber-300 font-semibold shadow-sm transition transform hover:-translate-y-0.5 flex items-center gap-2" id="hero-btn-sarovar">
+                <i data-lucide="waves" class="w-5 h-5 text-sky-600"></i>
+                <span>पवित्र सरोवर व चंदन मिट्टी</span>
+              </a>
+              <a href="#prayers" class="px-6 py-3 rounded-xl bg-amber-200/80 hover:bg-amber-300 text-maroon-950 border border-amber-400/60 font-semibold shadow-sm transition transform hover:-translate-y-0.5 flex items-center gap-2" id="hero-btn-manokamna">
+                <i data-lucide="heart-handshake" class="w-5 h-5 text-maroon-700"></i>
+                <span>मनोकामना अर्पण</span>
+              </a>
+            </div>
+
+            <!-- Key Quick Info Pillars -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-12 text-left">
+              <div class="bg-white/80 p-4 rounded-xl border border-amber-200/80 shadow-sm backdrop-blur-sm">
+                <span class="text-xs text-amber-800 font-semibold block uppercase">तपोभूमि</span>
+                <span class="text-sm sm:text-base font-bold text-maroon-950 font-hindi" id="pillar-1">प्राचीन समाधि स्थल</span>
+              </div>
+              <div class="bg-white/80 p-4 rounded-xl border border-amber-200/80 shadow-sm backdrop-blur-sm">
+                <span class="text-xs text-amber-800 font-semibold block uppercase">पवित्र जल</span>
+                <span class="text-sm sm:text-base font-bold text-maroon-950 font-hindi" id="pillar-2">बाबा सिद्ध सरोवर</span>
+              </div>
+              <div class="bg-white/80 p-4 rounded-xl border border-amber-200/80 shadow-sm backdrop-blur-sm">
+                <span class="text-xs text-amber-800 font-semibold block uppercase">वार्षिक उत्सव</span>
+                <span class="text-sm sm:text-base font-bold text-maroon-950 font-hindi" id="pillar-3">आषाढ़-सावन मेला</span>
+              </div>
+              <div class="bg-white/80 p-4 rounded-xl border border-amber-200/80 shadow-sm backdrop-blur-sm">
+                <span class="text-xs text-amber-800 font-semibold block uppercase">समीप रेलवे</span>
+                <span class="text-sm sm:text-base font-bold text-maroon-950 font-hindi" id="pillar-4">सोना अर्जुनपुर स्टेशन</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 2: TEMPLE OVERVIEW & TIMINGS -->
+      <section id="overview" class="py-16 bg-white border-y border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="ov-tag">आस्था एवं समय सारणी</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="ov-title">
+              मंदिर परिचय एवं दैनिक दर्शन
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="ov-desc">
+              सोना अर्जुनपुर गांव में स्थित श्री बाबा सिद्ध मंदिर पश्चिमी उत्तर प्रदेश के सहारनपुर जनपद का एक परम पावन तीर्थ है।
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Timings Card -->
+            <div class="bg-[#FFFDF9] rounded-2xl p-6 sm:p-8 border border-amber-300/80 shadow-sm">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-6">
+                <i data-lucide="sun" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-4" id="ov-time-head">दर्शन एवं आरती समय</h3>
+              <div class="space-y-4 text-sm sm:text-base font-hindi text-stone-700">
+                <div class="flex items-start justify-between border-b border-amber-100 pb-3">
+                  <span class="font-semibold text-amber-950">दैनिक कपाट दर्शन:</span>
+                  <span class="text-right text-saffron-800 font-bold" id="ov-val-daily">प्रातः 05:00 — रात्रि 08:30</span>
+                </div>
+                <div class="flex items-start justify-between border-b border-amber-100 pb-3">
+                  <span class="font-semibold text-amber-950">मंगला आरती:</span>
+                  <span class="text-right text-saffron-800 font-bold" id="ov-val-mangala">प्रातः 06:00 बजे</span>
+                </div>
+                <div class="flex items-start justify-between border-b border-amber-100 pb-3">
+                  <span class="font-semibold text-amber-950">सांध्य आरती:</span>
+                  <span class="text-right text-saffron-800 font-bold" id="ov-val-sandhya">सायं 07:00 बजे</span>
+                </div>
+                <div class="flex items-start justify-between">
+                  <span class="font-semibold text-amber-950">विशेष मेला दिवस:</span>
+                  <span class="text-right text-saffron-800 font-bold" id="ov-val-mela-days">आषाढ़-सावन (शनि/रवि)</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-500 font-hindi mt-6 italic" id="ov-time-note">
+                *ऋतु परिवर्तन एवं विशेष पर्वों के अनुसार समय में सूक्ष्म परिवर्तन संभव है।
+              </p>
+            </div>
+
+            <!-- Sacred Significance Card -->
+            <div class="bg-[#FFFDF9] rounded-2xl p-6 sm:p-8 border border-amber-300/80 shadow-sm">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-6">
+                <i data-lucide="sparkles" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-4" id="ov-sig-head">तपोभूमि की दिव्यता</h3>
+              <p class="text-stone-700 font-hindi leading-relaxed text-sm sm:text-base mb-4" id="ov-sig-body1">
+                स्थानीय परंपरा के अनुसार, बाबा सिद्ध जी उच्च कोटि के सिद्ध संत हुए जिन्होंने जन-कल्याण और आध्यात्मिक जागृति हेतु इस भूमि पर कठोर तपस्या की।
+              </p>
+              <p class="text-stone-700 font-hindi leading-relaxed text-sm sm:text-base" id="ov-sig-body2">
+                भक्तजन अपनी मनोकामना पूर्ति हेतु लाल ध्वज, प्रसाद और श्रद्धा-सुमन अर्पित करते हैं। यहाँ का शांत परिवेश मन को अवर्णनीय आध्यात्मिक अनुभूति कराता है।
+              </p>
+            </div>
+
+            <!-- Temple Services Card -->
+            <div class="bg-[#FFFDF9] rounded-2xl p-6 sm:p-8 border border-amber-300/80 shadow-sm">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-6">
+                <i data-lucide="hand-heart" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-4" id="ov-serv-head">भंडारा एवं सेवा परंपरा</h3>
+              <ul class="space-y-3 text-stone-700 font-hindi text-sm sm:text-base">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span id="ov-s1">मनौती पूर्ण होने पर भक्तजन श्रद्धापूर्वक भंडारे का आयोजन करते हैं।</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span id="ov-s2">सरोवर परिक्रमा मार्ग एवं स्नान हेतु पृथक सुरक्षित घाट निर्मित हैं।</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                  <span id="ov-s3">मंदिर परिसर के निकट विशाल वाहन पार्किंग व्यवस्था सुलभ है।</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: HISTORY & FOLKLORE -->
+      <section id="history" class="py-16 bg-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="hist-tag">पौराणिक एवं लोक विरासत</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="hist-title">
+              बाबा सिद्ध जी का इतिहास व साधना
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="hist-desc">
+              सदियों से चली आ रही लोक मान्यताएं, गुरु परंपरा और सोना अर्जुनपुर की पावन भूमि का संबंध।
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 sm:p-10 border border-amber-200/80 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              
+              <div class="space-y-4 font-hindi text-stone-700 leading-relaxed text-base sm:text-lg">
+                <div class="p-4 rounded-xl bg-amber-50/80 border-l-4 border-saffron-600 text-maroon-950 font-semibold text-sm sm:text-base">
+                  <span id="hist-tradition-badge">स्थानीय लोक मान्यता के अनुसार:</span>
+                  <p class="font-normal text-stone-800 mt-1" id="hist-tradition-text">
+                    "बाबा सिद्ध जी नाथ संप्रदाय अथवा गुरु गोरखनाथ जी की तपस्वी परंपरा से संबंधित सिद्ध महापुरुष थे, जिन्होंने सोना अर्जुनपुर को अपनी साधना स्थली बनाया।"
+                  </p>
+                </div>
+                <p id="hist-p1">
+                  इतिहासकारों व बुजुर्गों के अनुसार, बाबा जी ने यहाँ सघन वृक्षों के मध्य घोर तपस्या की। उनके द्वारा किए गए परोपकार, दीन-दुखियों के कष्ट निवारण और आध्यात्मिक उपदेशों ने इस संपूर्ण क्षेत्र को उनका अनन्य भक्त बना दिया।
+                </p>
+                <p id="hist-p2">
+                  परम समाधि में लीन होने के उपरांत, श्रद्धालुओं ने उसी पवित्र स्थल पर उनकी समाधि की स्थापना की। आज भी यहाँ अखंड विश्वास का दीपक प्रज्वलित है।
+                </p>
+                <p id="hist-p3">
+                  गांव सोना अर्जुनपुर की पहचान आज दूर-दूर तक श्री बाबा सिद्ध मंदिर के पावन नाम से ही जानी जाती है।
+                </p>
+              </div>
+
+              <!-- Visual Representation / Folklore Highlight Box -->
+              <div class="bg-gradient-to-br from-amber-100/70 via-amber-50 to-amber-100/40 p-6 sm:p-8 rounded-2xl border border-amber-300">
+                <h4 class="text-xl font-bold text-maroon-950 font-display-sacred mb-4 flex items-center gap-2">
+                  <i data-lucide="flame" class="w-6 h-6 text-saffron-600"></i>
+                  <span id="hist-box-title">तपस्या के पावन स्तम्भ</span>
+                </h4>
+                <div class="space-y-4 font-hindi text-stone-800 text-sm sm:text-base">
+                  <div class="flex items-start gap-3 bg-white/80 p-3.5 rounded-xl border border-amber-200">
+                    <span class="w-7 h-7 rounded-full bg-saffron-500 text-white font-bold flex items-center justify-center shrink-0 text-sm">१</span>
+                    <div>
+                      <strong class="text-maroon-950 block" id="hist-s1-title">कठोर साधना व समाधि</strong>
+                      <span class="text-stone-600 text-xs sm:text-sm" id="hist-s1-desc">जन-कल्याण हेतु भौतिक सुखों का त्याग कर ईश्वरीय चिंतन।</span>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-white/80 p-3.5 rounded-xl border border-amber-200">
+                    <span class="w-7 h-7 rounded-full bg-saffron-500 text-white font-bold flex items-center justify-center shrink-0 text-sm">२</span>
+                    <div>
+                      <strong class="text-maroon-950 block" id="hist-s2-title">समस्त जीवों के प्रति करुणा</strong>
+                      <span class="text-stone-600 text-xs sm:text-sm" id="hist-s2-desc">सरोवर में विचरण करने वाली मछलियों व कछुओं को सुरक्षा व संरक्षण।</span>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-white/80 p-3.5 rounded-xl border border-amber-200">
+                    <span class="w-7 h-7 rounded-full bg-saffron-500 text-white font-bold flex items-center justify-center shrink-0 text-sm">३</span>
+                    <div>
+                      <strong class="text-maroon-950 block" id="hist-s3-title">सामाजिक समरसता का प्रतीक</strong>
+                      <span class="text-stone-600 text-xs sm:text-sm" id="hist-s3-desc">जाति-पंथ के भेदभाव से परे सभी श्रद्धालुओं का समान सत्कार।</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: SACRED BABA SIDDH SAROVAR & CHANDAN MITTI -->
+      <section id="sarovar" class="py-16 bg-white border-y border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-sky-600 font-bold text-sm tracking-wider uppercase" id="sar-tag">पवित्र जल एवं परंपरा</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="sar-title">
+              बाबा सिद्ध सरोवर एवं चंदन मिट्टी परंपरा
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="sar-desc">
+              मंदिर परिसर से सटा विशाल एवं मनोरम सरोवर, जो आस्था, प्राकृतिक स्वच्छता और जलीय जीवों का पावन संगम है।
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-10">
+            
+            <!-- Left 7 cols: Features of the Sarovar -->
+            <div class="lg:col-span-7 space-y-6">
+              
+              <!-- Chandan Mitti Traditional Belief Card -->
+              <div class="bg-gradient-to-br from-amber-50 to-orange-50/50 p-6 sm:p-8 rounded-2xl border border-amber-300 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-10 h-10 rounded-lg bg-saffron-600 text-white flex items-center justify-center">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-maroon-950 font-hindi" id="sar-chandan-head">
+                    सरोवर की पवित्र "चंदन" मिट्टी की परंपरा
+                  </h3>
+                </div>
+                <p class="text-stone-700 font-hindi text-sm sm:text-base leading-relaxed mb-4" id="sar-chandan-body">
+                  स्थानीय लोक विश्वास के अनुसार, सरोवर की तलहटी से निकलने वाली मिट्टी को श्रद्धालु अत्यंत श्रद्धापूर्वक <strong class="text-saffron-800">"चंदन"</strong> कहते हैं। मान्यता है कि इस मिट्टी का लेप लगाकर सरोवर में स्नान करने से त्वचा संबंधी कष्टों व व्याधियों में शांति प्राप्त होती है।
+                </p>
+
+                <!-- Medical Disclaimer Required for Responsible Reporting -->
+                <div class="bg-amber-100/90 border-l-4 border-amber-600 p-3.5 rounded-r-lg text-xs sm:text-sm font-hindi text-amber-950">
+                  <div class="flex items-center gap-2 font-bold text-maroon-950 mb-1">
+                    <i data-lucide="alert-circle" class="w-4 h-4 text-amber-700 shrink-0"></i>
+                    <span id="sar-disc-title">श्रद्धा एवं स्वास्थ्य संबंधी परामर्श (Disclaimer):</span>
+                  </div>
+                  <p id="sar-disc-desc">
+                    चंदन मिट्टी से लाभ की मान्यता स्थानीय परंपरा एवं व्यक्तिगत आस्था पर आधारित है। इसे किसी प्रमाणित चिकित्सीय अथवा डॉक्टरी परामर्श का विकल्प न मानें। किसी भी गंभीर त्वचा रोग हेतु योग्य चिकित्सक की सलाह अवश्य लें।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Aquatic Life Section -->
+              <div class="bg-[#FFFDF9] p-6 sm:p-8 rounded-2xl border border-amber-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-10 h-10 rounded-lg bg-sky-600 text-white flex items-center justify-center">
+                    <i data-lucide="fish" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-maroon-950 font-hindi" id="sar-aqua-head">
+                    संरक्षित जलीय जीव: मछलियां व कछुए
+                  </h3>
+                </div>
+                <p class="text-stone-700 font-hindi text-sm sm:text-base leading-relaxed" id="sar-aqua-body">
+                  सरोवर को दो व्यवस्थित भागों में विभाजित किया गया है। एक भाग में श्रद्धालु स्नान करते हैं, जबकि दूसरा विस्तृत भाग जलीय जीवों के लिए समर्पित है। यहाँ सैकड़ों कछुए और मछलियां विचरण करती हैं। भक्तजन उन्हें आटे की गोलियां व दाना खिलाकर पुण्य अर्जित करते हैं।
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Right 5 cols: Ghat Rules & Cleanliness -->
+            <div class="lg:col-span-5 bg-gradient-to-b from-maroon-950 to-maroon-900 text-amber-100 p-6 sm:p-8 rounded-2xl shadow-md flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-amber-200 font-display-sacred mb-4 flex items-center gap-2">
+                  <i data-lucide="shield-alert" class="w-5 h-5 text-saffron-400"></i>
+                  <span id="sar-rules-head">सरोवर मर्यादा एवं आचार संहिता</span>
+                </h3>
+                <ul class="space-y-3 font-hindi text-sm sm:text-base text-amber-100/90">
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check" class="w-5 h-5 text-saffron-400 shrink-0 mt-0.5"></i>
+                    <span id="sar-r1">सरोवर के जल में साबुन, शैम्पू अथवा डिटर्जेंट का प्रयोग पूर्णतः वर्जित है।</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check" class="w-5 h-5 text-saffron-400 shrink-0 mt-0.5"></i>
+                    <span id="sar-r2">प्लास्टिक, पॉलीथीन अथवा पूजा सामग्री जल में प्रवाहित न करें।</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check" class="w-5 h-5 text-saffron-400 shrink-0 mt-0.5"></i>
+                    <span id="sar-r3">कछुओं व मछलियों को केवल अनुमोदित प्राकृतिक खाद्य (आटा) ही अर्पित करें।</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check" class="w-5 h-5 text-saffron-400 shrink-0 mt-0.5"></i>
+                    <span id="sar-r4">महिलाओं व पुरुषों के लिए चिन्हित अलग-अलग घाटों का ही उपयोग करें।</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-maroon-800">
+                <span class="text-xs text-amber-300 font-hindi block mb-1">स्वच्छ सरोवर — पावन सरोवर</span>
+                <p class="text-xs text-amber-200/80 font-hindi">
+                  समिति द्वारा सरोवर की नियमित सफाई एवं जल शुद्धिकरण का कार्य संपन्न कराया जाता है।
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 5: ANNUAL MELA & 52ND SANT SAMMELAN -->
+      <section id="mela" class="py-16 bg-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="mela-tag">वार्षिक उत्सव</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="mela-title">
+              वार्षिक मेला एवं 52वां विराट संत सम्मेलन
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="mela-desc">
+              आषाढ़ और सावन मास के प्रत्येक शनिवार व रविवार को उमड़ने वाला आस्था का अनुपम महाकुंभ।
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Card 1: Weekend Mela -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-amber-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-saffron-100 text-saffron-800 text-xs font-bold font-hindi mb-4">
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                  <span id="mela-c1-badge">आषाढ़ एवं सावन माह</span>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon-950 font-hindi mb-3" id="mela-c1-head">
+                  पारंपरिक सप्ताहांत मेला (शनिवार-रविवार)
+                </h3>
+                <p class="text-stone-700 font-hindi text-sm sm:text-base leading-relaxed mb-6" id="mela-c1-body">
+                  हर वर्ष आषाढ़ और सावन के महीने में लाखों श्रद्धालु दूर-दराज से बाबा के दर्शन हेतु आते हैं। शनिवार की रात्रि से ही भक्तों का तांता लगना प्रारंभ हो जाता है और रविवार को विशाल जनसैलाब उमड़ता है। यहाँ पारंपरिक दुकानें, झूले, और धार्मिक वस्तुएं उपलब्ध रहती हैं।
+                </p>
+              </div>
+              <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-xs sm:text-sm font-hindi text-stone-700">
+                <strong class="text-maroon-950 block mb-1">भक्तों के लिए व्यवस्थाएं:</strong>
+                सुरक्षा बल, स्वयंसेवक दल, निःशुल्क पेयजल, प्राथमिक चिकित्सा एवं खोया-पाया केंद्र सक्रिय रहते हैं।
+              </div>
+            </div>
+
+            <!-- Card 2: 52nd Virat Sant Sammelan -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-amber-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-maroon-100 text-maroon-900 text-xs font-bold font-hindi mb-4">
+                  <i data-lucide="award" class="w-4 h-4 text-maroon-700"></i>
+                  <span id="mela-c2-badge">ऐतिहासिक परंपरा</span>
+                </div>
+                <h3 class="text-2xl font-bold text-maroon-950 font-hindi mb-3" id="mela-c2-head">
+                  विराट संत सम्मेलन एवं धर्म संदेश
+                </h3>
+                <p class="text-stone-700 font-hindi text-sm sm:text-base leading-relaxed mb-6" id="mela-c2-body">
+                  बाबा सिद्ध मंदिर की पावन धरा पर प्रतिवर्ष विराट संत सम्मेलन का भव्य आयोजन होता है। इसमें देश के मूर्धन्य संत, महामंडलेश्वर, विद्वान एवं कथावाचक पधारते हैं। संतों द्वारा वैदिक सनातन संस्कृति, सदाचार, नशा-मुक्ति एवं पर्यावरण संरक्षण पर प्रेरक प्रवचन दिए जाते हैं।
+                </p>
+              </div>
+              <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-xs sm:text-sm font-hindi text-stone-700">
+                <strong class="text-maroon-950 block mb-1">विशाल भंडारा एवं प्रसाद:</strong>
+                सम्मेलन के पावन अवसर पर दिन-रात निरंतर अटूट लंगर व भंडारे का संचालन किया जाता है।
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 6: EDUCATIONAL INSTITUTIONS -->
+      <section id="institutions" class="py-16 bg-white border-y border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="edu-tag">शिक्षा एवं ग्रामोत्थान</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="edu-title">
+              बाबा सिद्ध जी के नाम से संचालित शिक्षण संस्थान
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="edu-desc">
+              आध्यात्मिक चेतना के साथ-साथ ज्ञान और शिक्षा का प्रसार। सोना अर्जुनपुर में स्थापित तीन प्रतिष्ठित विद्या केंद्र।
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- School 1 -->
+            <div class="bg-[#FFFDF9] rounded-2xl p-6 border border-amber-200 shadow-sm hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-4">
+                <i data-lucide="graduation-cap" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-2" id="edu-1-name">
+                श्री बाबा सिद्ध इंटर कॉलेज
+              </h3>
+              <span class="text-xs font-semibold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded inline-block mb-3 font-hindi">
+                माध्यमिक एवं उच्च माध्यमिक शिक्षा
+              </span>
+              <p class="text-stone-600 font-hindi text-sm leading-relaxed mb-4" id="edu-1-desc">
+                सोना अर्जुनपुर और आसपास के 25 से अधिक गांवों के छात्र-छात्राओं के उज्ज्वल भविष्य निर्माण हेतु समर्पित प्रमुख कॉलेज।
+              </p>
+              <div class="text-xs text-amber-900/80 font-hindi bg-amber-50 p-2.5 rounded-lg border border-amber-200/60">
+                स्थिति: आधिकारिक विवरण व संपर्क शीघ्र अपडेट किए जाएंगे
+              </div>
+            </div>
+
+            <!-- School 2 -->
+            <div class="bg-[#FFFDF9] rounded-2xl p-6 border border-amber-200 shadow-sm hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-4">
+                <i data-lucide="book-open" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-2" id="edu-2-name">
+                श्री बाबा सिद्ध गर्ल्स महाविद्यालय
+              </h3>
+              <span class="text-xs font-semibold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded inline-block mb-3 font-hindi">
+                महिला उच्च शिक्षा संस्थान
+              </span>
+              <p class="text-stone-600 font-hindi text-sm leading-relaxed mb-4" id="edu-2-desc">
+                ग्रामीण अंचल की बेटियों को सुरक्षित व गुणवत्तापूर्ण उच्च शिक्षा सुलभ कराकर स्वावलंबन की ओर अग्रसर करने का महती प्रयास।
+              </p>
+              <div class="text-xs text-amber-900/80 font-hindi bg-amber-50 p-2.5 rounded-lg border border-amber-200/60">
+                स्थिति: आधिकारिक विवरण व संपर्क शीघ्र अपडेट किए जाएंगे
+              </div>
+            </div>
+
+            <!-- School 3 -->
+            <div class="bg-[#FFFDF9] rounded-2xl p-6 border border-amber-200 shadow-sm hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-4">
+                <i data-lucide="school" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-2" id="edu-3-name">
+                श्री बाबा सिद्ध सरस्वती शिशु विद्या मंदिर
+              </h3>
+              <span class="text-xs font-semibold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded inline-block mb-3 font-hindi">
+                प्राथमिक एवं संस्कारयुक्त शिक्षा
+              </span>
+              <p class="text-stone-600 font-hindi text-sm leading-relaxed mb-4" id="edu-3-desc">
+                बाल्यावस्था से ही भारतीय संस्कृति, राष्ट्रभक्ति, अनुशासन और आधुनिक प्राथमिक ज्ञान का सुदृढ़ संवर्धन।
+              </p>
+              <div class="text-xs text-amber-900/80 font-hindi bg-amber-50 p-2.5 rounded-lg border border-amber-200/60">
+                स्थिति: आधिकारिक विवरण व संपर्क शीघ्र अपडेट किए जाएंगे
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 7: HISTORICAL TIMELINE -->
+      <section class="py-16 bg-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="time-tag">विरासत यात्रा</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="time-title">
+              तपस्या से आधुनिक तीर्थ तक का ऐतिहासिक क्रम
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-hindi">
+            
+            <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-sm relative">
+              <span class="text-3xl font-extrabold text-saffron-500/30 absolute top-4 right-5 font-sans">01</span>
+              <h4 class="text-lg font-bold text-maroon-950 mb-1" id="tl-1-t">बाबा सिद्ध जी की तपस्या</h4>
+              <p class="text-xs text-saffron-700 font-semibold mb-2" id="tl-1-s">गुरु गोरखनाथ परंपरा से जुड़ाव</p>
+              <p class="text-stone-600 text-sm leading-relaxed" id="tl-1-d">
+                स्थानीय मान्यता के अनुसार, बहुत समय पूर्व बाबा सिद्ध जी सोना अर्जुनपुर की इस पावन धरा पर पधारे और कठोर साधना की।
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-sm relative">
+              <span class="text-3xl font-extrabold text-saffron-500/30 absolute top-4 right-5 font-sans">02</span>
+              <h4 class="text-lg font-bold text-maroon-950 mb-1" id="tl-2-t">पावन समाधि स्थल की प्रतिष्ठा</h4>
+              <p class="text-xs text-saffron-700 font-semibold mb-2" id="tl-2-s">पवित्र भूमि पर समाधि स्थापना</p>
+              <p class="text-stone-600 text-sm leading-relaxed" id="tl-2-d">
+                बाबा जी द्वारा शरीर त्यागने के पश्चात उनकी पवित्र समाधि इसी भूमि पर स्थापित की गई, जो अनंत आस्था का केंद्र बनी।
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-sm relative">
+              <span class="text-3xl font-extrabold text-saffron-500/30 absolute top-4 right-5 font-sans">03</span>
+              <h4 class="text-lg font-bold text-maroon-950 mb-1" id="tl-3-t">मंदिर का प्राकट्य एवं विस्तार</h4>
+              <p class="text-xs text-saffron-700 font-semibold mb-2" id="tl-3-s">श्रद्धालुओं का प्रमुख आस्था केंद्र</p>
+              <p class="text-stone-600 text-sm leading-relaxed" id="tl-3-d">
+                समाधि स्थल के चारों ओर भव्य मंदिर का निर्माण हुआ, जहाँ पश्चिमी उ.प्र. व हरियाणा से लाखों श्रद्धालु दर्शन हेतु आने लगे।
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-sm relative">
+              <span class="text-3xl font-extrabold text-saffron-500/30 absolute top-4 right-5 font-sans">04</span>
+              <h4 class="text-lg font-bold text-maroon-950 mb-1" id="tl-4-t">पवित्र सरोवर एवं चंदन मिट्टी</h4>
+              <p class="text-xs text-saffron-700 font-semibold mb-2" id="tl-4-s">जलीय जीव संरक्षण व स्नान परंपरा</p>
+              <p class="text-stone-600 text-sm leading-relaxed" id="tl-4-d">
+                सरोवर का विस्तार हुआ। दो पृथक भाग बने—स्नान घाट और मछलियों-कछुओं का आवास। चंदन मिट्टी की महिमा सर्वत्र फैली।
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-sm relative">
+              <span class="text-3xl font-extrabold text-saffron-500/30 absolute top-4 right-5 font-sans">05</span>
+              <h4 class="text-lg font-bold text-maroon-950 mb-1" id="tl-5-t">वार्षिक मेला एवं संत सम्मेलन</h4>
+              <p class="text-xs text-saffron-700 font-semibold mb-2" id="tl-5-s">आषाढ़ व सावन का धार्मिक उत्सव</p>
+              <p class="text-stone-600 text-sm leading-relaxed" id="tl-5-d">
+                सप्ताहांत मेले और विराट संत सम्मेलन की परंपरा प्रारंभ हुई, जो क्षेत्र की सबसे बड़ी सांस्कृतिक धरोहर बन गई।
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-amber-200 shadow-sm relative">
+              <span class="text-3xl font-extrabold text-saffron-500/30 absolute top-4 right-5 font-sans">06</span>
+              <h4 class="text-lg font-bold text-maroon-950 mb-1" id="tl-6-t">शिक्षा संस्थानों तक विस्तार</h4>
+              <p class="text-xs text-saffron-700 font-semibold mb-2" id="tl-6-s">सोना अर्जुनपुर का सर्वांगीण विकास</p>
+              <p class="text-stone-600 text-sm leading-relaxed" id="tl-6-d">
+                बाबा सिद्ध जी के नाम पर इंटर कॉलेज, डिग्री कॉलेज और शिशु मंदिर की स्थापना कर ग्रामीण युवाओं को शिक्षित किया जा रहा है।
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 8: GALLERY & VISUAL DARSHAN -->
+      <section id="gallery" class="py-16 bg-white border-y border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="gal-tag">आध्यात्मिक दर्शन</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="gal-title">
+              दर्शन छायाचित्र एवं पावन स्मृतियां
+            </h2>
+            <p class="text-stone-600 font-hindi mt-2 text-base" id="gal-desc">
+              मंदिर गर्भगृह, समाधि स्थल, बाबा सिद्ध सरोवर एवं वार्षिक मेले के दुर्लभ पावन दृश्य।
+            </p>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mb-8 font-hindi text-xs sm:text-sm">
+            <button onclick="filterGallery('all')" class="gal-filter-btn px-4 py-1.5 rounded-full bg-saffron-600 text-white font-medium shadow-sm transition" data-cat="all">सभी दर्शन</button>
+            <button onclick="filterGallery('mandir')" class="gal-filter-btn px-4 py-1.5 rounded-full bg-amber-100 text-maroon-900 font-medium hover:bg-amber-200 transition" data-cat="mandir">मंदिर व समाधि</button>
+            <button onclick="filterGallery('sarovar')" class="gal-filter-btn px-4 py-1.5 rounded-full bg-amber-100 text-maroon-900 font-medium hover:bg-amber-200 transition" data-cat="sarovar">पवित्र सरोवर</button>
+            <button onclick="filterGallery('mela')" class="gal-filter-btn px-4 py-1.5 rounded-full bg-amber-100 text-maroon-900 font-medium hover:bg-amber-200 transition" data-cat="mela">मेला व संत सम्मेलन</button>
+          </div>
+
+          <!-- Gallery Grid Container -->
+          <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic Items Injected by Vanilla JS -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 9: DEVOTIONAL MANOKAMNA PRAYER WALL -->
+      <section id="prayers" class="py-16 bg-[#FAF7F2]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="pray-tag">श्रद्धा एवं अरदास</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="pray-title">
+              मनोकामना पटल (भक्तों की अरदास)
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="pray-desc">
+              बाबा सिद्ध जी के चरणों में अपनी श्रद्धा, मंगलकामना अथवा प्रार्थना समर्पित करें।
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Left 5 cols: Prayer Submission Form -->
+            <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-amber-300 shadow-sm">
+              <h3 class="text-xl font-bold text-maroon-950 font-hindi mb-2 flex items-center gap-2">
+                <i data-lucide="feather" class="w-5 h-5 text-saffron-600"></i>
+                <span id="pray-form-head">अपनी मनोकामना / प्रार्थना भेजें</span>
+              </h3>
+              <p class="text-xs text-stone-500 font-hindi mb-6">
+                *आपकी प्रार्थना समिति द्वारा समीक्षा के पश्चात मनोकामना पटल पर प्रदर्शित की जाती है।
+              </p>
+
+              <form id="prayer-form" onsubmit="handlePrayerSubmit(event)" class="space-y-4 font-hindi">
+                <div>
+                  <label class="block text-sm font-semibold text-amber-950 mb-1" id="lbl-p-name">आपका शुभ नाम *</label>
+                  <input
+                    type="text"
+                    id="p-name"
+                    required
+                    placeholder="जैसे: रमेश कुमार शर्मा"
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-saffron-500 text-sm bg-amber-50/40"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold text-amber-950 mb-1" id="lbl-p-village">गांव / शहर एवं जनपद *</label>
+                  <input
+                    type="text"
+                    id="p-village"
+                    required
+                    placeholder="जैसे: सोना अर्जुनपुर / सहारनपुर"
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-saffron-500 text-sm bg-amber-50/40"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold text-amber-950 mb-1" id="lbl-p-msg">प्रार्थना / मनोकामना संदेश *</label>
+                  <textarea
+                    id="p-msg"
+                    rows="4"
+                    required
+                    placeholder="बाबा सिद्ध जी के चरणों में अपनी विनम्र प्रार्थना लिखें..."
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-saffron-500 text-sm bg-amber-50/40"
+                  ></textarea>
+                </div>
+
+                <div class="pt-2">
+                  <button
+                    type="submit"
+                    id="btn-submit-prayer"
+                    class="w-full py-3 rounded-xl bg-gradient-to-r from-saffron-600 to-maroon-900 hover:from-saffron-700 hover:to-maroon-950 text-white font-bold text-sm sm:text-base shadow transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                    <span>प्रार्थना समर्पित करें</span>
+                  </button>
+                </div>
+
+                <div id="prayer-success-alert" class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs sm:text-sm">
+                  ✓ आपकी प्रार्थना सफलतापूर्वक प्रेषित हुई! समिति अनुमोदन के पश्चात यह सार्वजनिक पटल पर दिखेगी।
+                </div>
+              </form>
+            </div>
+
+            <!-- Right 7 cols: Approved Prayers List -->
+            <div class="lg:col-span-7 space-y-4">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-maroon-950 font-hindi text-lg flex items-center gap-2">
+                  <i data-lucide="message-square" class="w-5 h-5 text-saffron-600"></i>
+                  <span id="pray-list-head">स्वीकृत मनोकामनाएं एवं श्रद्धा संदेश</span>
+                </h4>
+                <span class="text-xs bg-amber-200 text-maroon-900 px-2.5 py-0.5 rounded-full font-bold" id="prayer-count-badge">4 संदेश</span>
+              </div>
+
+              <div id="prayers-list-container" class="space-y-3 max-h-[500px] overflow-y-auto pr-1 custom-scrollbar">
+                <!-- Injected via Vanilla JS -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 10: TRAVEL GUIDE & TRANSIT ROUTE -->
+      <section id="travel" class="py-16 bg-white border-y border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saffron-600 font-bold text-sm tracking-wider uppercase" id="trv-tag">यात्रा एवं संपर्क</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-maroon-950 font-display-sacred mt-1" id="trv-title">
+              मंदिर कैसे पहुँचें — आवागमन मार्ग
+            </h2>
+            <p class="text-stone-600 font-hindi mt-3 text-base sm:text-lg" id="trv-desc">
+              सोना अर्जुनपुर गांव, जनपद सहारनपुर (उत्तर प्रदेश) स्थित मंदिर तक पहुँचने के सुगम साधन।
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            
+            <!-- Rail Transit -->
+            <div class="bg-[#FFFDF9] p-6 rounded-2xl border border-amber-200 shadow-sm">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-4">
+                <i data-lucide="train" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-lg font-bold text-maroon-950 font-hindi mb-2" id="trv-rail-head">रेलवे मार्ग</h3>
+              <p class="text-stone-700 font-hindi text-sm leading-relaxed mb-3" id="trv-rail-body">
+                <strong>सोना अर्जुनपुर रेलवे स्टेशन:</strong> यह स्टेशन सहारनपुर–शामली–दिल्ली रेल खंड पर स्थित है। पैसेंजर व डेमू ट्रेनें यहाँ रुकती हैं।
+              </p>
+              <p class="text-xs text-stone-500 font-hindi" id="trv-rail-sub">
+                मुख्य जंक्शन: सहारनपुर रेलवे स्टेशन (दूरी लगभग 20–22 किमी)। यहाँ से ई-रिक्शा, ऑटो एवं बसें सुलभ हैं।
+              </p>
+            </div>
+
+            <!-- Road Transit -->
+            <div class="bg-[#FFFDF9] p-6 rounded-2xl border border-amber-200 shadow-sm">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-4">
+                <i data-lucide="car" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-lg font-bold text-maroon-950 font-hindi mb-2" id="trv-road-head">सड़क मार्ग</h3>
+              <p class="text-stone-700 font-hindi text-sm leading-relaxed mb-3" id="trv-road-body">
+                सहारनपुर शहर से रामपुर मनिहारान / शामली रोड के माध्यम से सुगम पक्की सड़क उपलब्ध है।
+              </p>
+              <p class="text-xs text-stone-500 font-hindi" id="trv-road-sub">
+                दिल्ली, देहरादून, मेरठ और मुजफ्फरनगर से सीधे निजी वाहन अथवा राज्य परिवहन की बसों द्वारा पहुँचा जा सकता है।
+              </p>
+            </div>
+
+            <!-- Nearest Airport -->
+            <div class="bg-[#FFFDF9] p-6 rounded-2xl border border-amber-200 shadow-sm">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-maroon-900 mb-4">
+                <i data-lucide="plane" class="w-6 h-6 text-saffron-600"></i>
+              </div>
+              <h3 class="text-lg font-bold text-maroon-950 font-hindi mb-2" id="trv-air-head">निकटतम हवाई अड्डा</h3>
+              <p class="text-stone-700 font-hindi text-sm leading-relaxed mb-3" id="trv-air-body">
+                जॉली ग्रांट एयरपोर्ट, देहरादून (लगभग 95 किमी) एवं इंदिरा गांधी अंतरराष्ट्रीय हवाई अड्डा, नई दिल्ली (लगभग 170 किमी)।
+              </p>
+              <p class="text-xs text-stone-500 font-hindi" id="trv-air-sub">
+                हवाई अड्डे से टैक्सी व ट्रेन द्वारा सहारनपुर तक सीधी कनेक्टिविटी।
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Direct Google Maps Card -->
+          <div class="bg-gradient-to-r from-amber-100/90 via-amber-50 to-amber-100/80 p-6 sm:p-8 rounded-2xl border border-amber-300 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <h4 class="text-xl font-bold text-maroon-950 font-hindi mb-1 flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-5 h-5 text-saffron-600"></i>
+                <span id="trv-map-head">गूगल मैप्स पर सटीक लोकेशन देखें</span>
+              </h4>
+              <p class="text-stone-600 font-hindi text-sm" id="trv-map-desc">
+                सोना अर्जुनपुर, जनपद सहारनपुर, उत्तर प्रदेश — पिन कोड व नेविगेशन सीधे अपने मोबाइल पर खोलें।
+              </p>
+            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Sona+Arjunpur+Saharanpur+Uttar+Pradesh"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3 rounded-xl bg-saffron-600 hover:bg-saffron-700 text-white font-bold font-hindi text-sm sm:text-base shrink-0 shadow transition flex items-center gap-2"
+            >
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              <span id="trv-btn-map">गूगल मैप्स नेविगेशन खोलें</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-maroon-950 text-amber-100 pt-16 pb-12 border-t border-amber-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-maroon-900">
+          
+          <!-- Col 1: About -->
+          <div class="md:col-span-2 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-saffron-600 text-white font-bold flex items-center justify-center text-lg">
+                ॐ
+              </div>
+              <h3 class="font-display-sacred font-bold text-xl text-amber-200" id="foot-title">
+                श्री बाबा सिद्ध मंदिर
+              </h3>
+            </div>
+            <p class="text-amber-100/80 font-hindi text-sm leading-relaxed max-w-md" id="foot-about">
+              सोना अर्जुनपुर, जनपद सहारनपुर (उ.प्र.) की पवित्र धरा पर स्थित बाबा सिद्ध जी का प्राचीन तपोस्थल। आस्था, विश्वास, पवित्र सरोवर एवं 52वें विराट संत सम्मेलन का पावन केंद्र।
+            </p>
+            <div class="pt-2 text-xs text-amber-300 font-hindi">
+              समिति: <span id="foot-committee">श्री बाबा सिद्ध मंदिर प्रबंधन एवं सेवा समिति, सोना अर्जुनपुर</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="space-y-3 font-hindi text-sm">
+            <h4 class="font-bold text-amber-200 text-base" id="foot-links-head">त्वरित लिंक</h4>
+            <ul class="space-y-2 text-amber-100/70">
+              <li><a href="#overview" class="hover:text-saffron-400 transition">दर्शन व आरती समय</a></li>
+              <li><a href="#sarovar" class="hover:text-saffron-400 transition">पवित्र सरोवर व चंदन मिट्टी</a></li>
+              <li><a href="#mela" class="hover:text-saffron-400 transition">वार्षिक मेला व संत सम्मेलन</a></li>
+              <li><a href="#institutions" class="hover:text-saffron-400 transition">संबद्ध शिक्षण संस्थान</a></li>
+              <li><a href="#travel" class="hover:text-saffron-400 transition">यात्रा एवं दिशा निर्देश</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact & Help -->
+          <div class="space-y-3 font-hindi text-sm">
+            <h4 class="font-bold text-amber-200 text-base" id="foot-contact-head">संपर्क एवं सहायता</h4>
+            <div class="space-y-2 text-amber-100/80 text-xs sm:text-sm">
+              <p class="flex items-start gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-saffron-400 shrink-0 mt-0.5"></i>
+                <span id="foot-addr">ग्राम सोना अर्जुनपुर, जनपद सहारनपुर, उ.प्र.</span>
+              </p>
+              <p class="flex items-start gap-2">
+                <i data-lucide="phone" class="w-4 h-4 text-saffron-400 shrink-0 mt-0.5"></i>
+                <span id="foot-phone">समिति संपर्क: मंदिर सेवा कार्यालय</span>
+              </p>
+              <p class="flex items-start gap-2">
+                <i data-lucide="mail" class="w-4 h-4 text-saffron-400 shrink-0 mt-0.5"></i>
+                <span>info@babasiddhmandir.org</span>
+              </p>
+            </div>
+            <div class="pt-2">
+              <button onclick="openAdminModal()" class="text-xs text-saffron-400 hover:text-saffron-300 underline font-medium">
+                समिति प्रबंधन पोर्टल लॉगिन
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-amber-300/70 font-hindi">
+          <p>© 2026 श्री बाबा सिद्ध मंदिर, सोना अर्जुनपुर। सर्वाधिकार सुरक्षित।</p>
+          <p class="text-center sm:text-right">जय बाबा सिद्ध जी — सर्वजन हिताय, सर्वजन सुखाय</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm hidden flex items-center justify-center p-4">
+      <div class="relative max-w-4xl w-full bg-[#1F1612] text-amber-50 rounded-2xl overflow-hidden border border-amber-800 shadow-2xl p-6">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-amber-200 hover:text-white p-2 rounded-full bg-black/40 transition">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <div class="w-full aspect-video bg-amber-950/40 rounded-xl flex items-center justify-center border border-amber-900/50 mb-4 overflow-hidden" id="lightbox-img-box">
+          <div class="text-center p-6">
+            <i data-lucide="image" class="w-16 h-16 text-saffron-500/60 mx-auto mb-2"></i>
+            <span class="text-amber-200 text-sm block" id="lightbox-placeholder-text">सत्यापित छायाचित्र</span>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold text-amber-100 font-hindi mb-2" id="lightbox-title">दर्शन छायाचित्र</h3>
+        <p class="text-stone-300 font-hindi text-sm leading-relaxed" id="lightbox-desc"></p>
+      </div>
+    </div>
+
+    <!-- ADMIN MANAGEMENT PORTAL MODAL -->
+    <div id="admin-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+      <div class="relative max-w-2xl w-full bg-white rounded-2xl shadow-2xl border border-amber-300 overflow-hidden max-h-[90vh] flex flex-col">
+        
+        <div class="bg-gradient-to-r from-maroon-950 to-maroon-900 text-amber-100 p-5 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <i data-lucide="shield-check" class="w-6 h-6 text-saffron-400"></i>
+            <div>
+              <h3 class="font-bold text-lg font-hindi">मंदिर प्रबंधन एवं समिति पोर्टल</h3>
+              <span class="text-xs text-amber-300">सूचना, समय सारणी एवं मनोकामना अनुमोदन</span>
+            </div>
+          </div>
+          <button onclick="closeAdminModal()" class="text-amber-200 hover:text-white p-1 rounded transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="p-6 overflow-y-auto space-y-6 font-hindi custom-scrollbar flex-grow">
+          
+          <!-- Live Notice Edit -->
+          <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
+            <label class="block text-sm font-bold text-maroon-950 mb-1">शीर्ष सूचना संदेश (Notice Banner)</label>
+            <input
+              type="text"
+              id="admin-notice-input"
+              class="w-full px-3 py-2 rounded-lg border border-amber-300 text-sm focus:ring-2 focus:ring-saffron-500"
+            />
+            <p class="text-xs text-stone-500 mt-1">यह संदेश वेबसाइट के सबसे ऊपर स्क्रॉल/प्रदर्शित होता है।</p>
+          </div>
+
+          <!-- Temple Timings Edit -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-maroon-950 mb-1">दैनिक दर्शन समय</label>
+              <input
+                type="text"
+                id="admin-daily-hours"
+                class="w-full px-3 py-2 rounded-lg border border-amber-300 text-sm"
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-maroon-950 mb-1">आरती समय विवरण</label>
+              <input
+                type="text"
+                id="admin-aarti-timings"
+                class="w-full px-3 py-2 rounded-lg border border-amber-300 text-sm"
+              />
+            </div>
+          </div>
+
+          <!-- Pending / Moderation Prayers -->
+          <div>
+            <h4 class="text-sm font-bold text-maroon-950 mb-2 flex items-center justify-between">
+              <span>भक्तों की प्रार्थनाएं (प्रबंधन एवं समीक्षा)</span>
+              <span class="text-xs text-saffron-700" id="admin-prayers-count"></span>
+            </h4>
+            <div id="admin-prayers-list" class="space-y-2 max-h-48 overflow-y-auto custom-scrollbar p-1">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+            <button
+              onclick="resetToDefaults()"
+              class="px-4 py-2 rounded-lg border border-stone-300 text-stone-700 text-xs hover:bg-stone-100 transition"
+            >
+              डिफ़ॉल्ट सेटिंग्स रीसेट करें
+            </button>
+            <button
+              onclick="saveAdminSettings()"
+              class="px-5 py-2.5 rounded-lg bg-saffron-600 hover:bg-saffron-700 text-white font-bold text-sm transition flex items-center gap-1.5 shadow"
+            >
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span>परिवर्तन सुरक्षित करें</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FLOATING BELL BUTTON -->
+    <button
+      onclick="playTempleBell()"
+      class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-gradient-to-br from-saffron-500 to-maroon-900 text-white shadow-xl hover:shadow-2xl border-2 border-amber-200 flex items-center justify-center group transition transform hover:scale-110 active:scale-95"
+      title="मंदिर की पावन घंटी बजाएं"
+    >
+      <i id="float-bell-icon" data-lucide="bell" class="w-6 h-6 text-amber-200 group-hover:text-white"></i>
+      <span class="sr-only">मंदिर घंटी</span>
+    </button>
+
+    <!-- ==================== VANILLA JAVASCRIPT ==================== -->
+    <script>
+      // 1. DATA STATE & STORAGE
+      const DEFAULT_TEMPLE_INFO = {
+        noticeHi: "आगामी वार्षिक मेले एवं 52वें विराट संत सम्मेलन के दौरान सरोवर की पवित्रता व स्वच्छता बनाए रखने में सहयोग करें।",
+        noticeEn: "Notice: Kindly cooperate in maintaining the sanctity and cleanliness of the Sarovar during the upcoming fair.",
+        dailyHoursHi: "प्रातः 05:00 — रात्रि 08:30",
+        dailyHoursEn: "05:00 AM — 08:30 PM",
+        aartiHi: "मंगला: 06:00 AM | सांध्य: 07:00 PM",
+        aartiEn: "Mangala: 06:00 AM | Evening: 07:00 PM",
+      };
+
+      const INITIAL_PRAYERS = [
+        {
+          id: 'p-1',
+          name: 'रामकुमार शर्मा',
+          villageCity: 'सहारनपुर',
+          prayer: 'बाबा सिद्ध जी की कृपा से हमारे परिवार में सुख-शांति बनी रहे। बाबा के चरणों में कोटि-कोटि वंदन।',
+          timestamp: '2026-08-12',
+          approved: true,
+        },
+        {
+          id: 'p-2',
+          name: 'सत्यवीर सिंह',
+          villageCity: 'शामली',
+          prayer: 'बाबा सिद्ध जी के दरबार में आकर मन को अपार शांति मिली। बाबा सबका कल्याण करें।',
+          timestamp: '2026-08-20',
+          approved: true,
+        },
+        {
+          id: 'p-3',
+          name: 'पुष्पा देवी',
+          villageCity: 'मुजफ्फरनगर',
+          prayer: 'सरोवर के दर्शन और बाबा के चरणों में मत्था टेककर मनोकामना पूर्ण हुई। जय बाबा सिद्ध जी!',
+          timestamp: '2026-09-02',
+          approved: true,
+        },
+        {
+          id: 'p-4',
+          name: 'अमित कश्यप',
+          villageCity: 'सोना अर्जुनपुर',
+          prayer: 'हमारे गांव की पहचान बाबा सिद्ध जी की पावन धरती से है। बाबा सदैव अपनी कृपा दृष्टि बनाए रखें।',
+          timestamp: '2026-09-10',
+          approved: true,
+        }
+      ];
+
+      const GALLERY_DATA = [
+        {
+          id: 'g-1',
+          category: 'mandir',
+          titleHi: 'मुख्य मंदिर गर्भगृह एवं शिखर',
+          titleEn: 'Main Sanctum & Temple Spire',
+          descHi: 'प्राचीन तपोस्थली पर स्थित बाबा सिद्ध मंदिर का पावन मुख्य द्वार व शिखर।',
+          descEn: 'The sanctum sanctorum and shikhara of Shri Baba Siddh Mandir.',
+          labelHi: 'मुख्य मंदिर वास्तु छायाचित्र (सत्यापित फोटो आरक्षित)',
+          labelEn: 'Main Temple Architecture Photo'
+        },
+        {
+          id: 'g-2',
+          category: 'mandir',
+          titleHi: 'बाबा सिद्ध जी की पावन समाधि',
+          titleEn: 'Holy Samadhi of Baba Siddh Ji',
+          descHi: 'जिस तपोभूमि पर बाबा सिद्ध जी ने समाधि ली, वह अखंड ज्योति व श्रद्धा का पावन केंद्र।',
+          descEn: 'The revered Samadhi sthal where devotees offer prayers and sacred flags.',
+          labelHi: 'समाधि स्थल दर्शन छायाचित्र (सत्यापित फोटो आरक्षित)',
+          labelEn: 'Samadhi Sthal Darshan Photo'
+        },
+        {
+          id: 'g-3',
+          category: 'sarovar',
+          titleHi: 'बाबा सिद्ध सरोवर का विहंगम दृश्य',
+          titleEn: 'Panoramic View of Baba Siddh Sarovar',
+          descHi: 'मंदिर परिसर को घेरे हुए शांत, निर्मल एवं विशाल पवित्र सरोवर।',
+          descEn: 'The serene and tranquil sacred sarovar encircling the temple grounds.',
+          labelHi: 'पवित्र सरोवर विहंगम दृश्य (सत्यापित फोटो आरक्षित)',
+          labelEn: 'Sacred Sarovar Panoramic Photo'
+        },
+        {
+          id: 'g-4',
+          category: 'sarovar',
+          titleHi: 'सरोवर में कछुए एवं मछलियां',
+          titleEn: 'Turtles & Fishes in Dedicated Sanctuary',
+          descHi: 'सरोवर के संरक्षित भाग में रहने वाले जलीय जीव, जिन्हें श्रद्धालु आत्मीयता से आहार देते हैं।',
+          descEn: 'Aquatic life living peacefully in the protected portion of the holy pond.',
+          labelHi: 'सरोवर जलीय जीव संरक्षण छायाचित्र',
+          labelEn: 'Aquatic Life Conservation Photo'
+        },
+        {
+          id: 'g-5',
+          category: 'sarovar',
+          titleHi: 'सरोवर की पावन "चंदन" मिट्टी घाट',
+          titleEn: 'Holy "Chandan" Mitti Bathing Ghat',
+          descHi: 'स्थानीय परंपरा अनुसार श्रद्धालु इस मिट्टी का लेप लगाकर सरोवर में स्नान करते हैं।',
+          descEn: 'Devotees apply the holy clay before taking a sacred dip in the sarovar.',
+          labelHi: 'चंदन मिट्टी परंपरा एवं स्नान घाट छायाचित्र',
+          labelEn: 'Chandan Mitti Tradition & Ghat'
+        },
+        {
+          id: 'g-6',
+          category: 'mela',
+          titleHi: 'वार्षिक मेले का उल्लास',
+          titleEn: 'Vibrant Annual Mela Gatherings',
+          descHi: 'आषाढ़ एवं सावन के शनिवार-रविवार को उमड़ने वाले जनसैलाब और मेले की छटा।',
+          descEn: 'Devotees gathering during Ashadha and Sawan weekend celebrations.',
+          labelHi: 'वार्षिक मेला सांस्कृतिक दृश्य छायाचित्र',
+          labelEn: 'Annual Fair Cultural Photo'
+        },
+        {
+          id: 'g-7',
+          category: 'mela',
+          titleHi: 'विराट संत सम्मेलन मंच',
+          titleEn: 'Virat Sant Sammelan Gathering',
+          descHi: 'साधु-संतों एवं विद्वानों का सान्निध्य और पावन प्रवचन सभा।',
+          descEn: 'Spiritual discourse and congregation of respected saints and scholars.',
+          labelHi: 'संत सम्मेलन सभा छायाचित्र',
+          labelEn: 'Sant Sammelan Assembly Photo'
+        },
+        {
+          id: 'g-8',
+          category: 'mela',
+          titleHi: 'श्रद्धालुओं द्वारा ध्वज एवं मनौती अर्पण',
+          titleEn: 'Devotees Offering Sacred Flags & Seva',
+          descHi: 'भक्ति भाव से नतमस्तक श्रद्धालु, ध्वजारोहण व भंडारे की पारंपरिक सेवा।',
+          descEn: 'Pilgrims offering sacred flags (dhwaj) and organizing feast seva.',
+          labelHi: 'श्रद्धालु मनौती एवं दर्शन छायाचित्र',
+          labelEn: 'Devotees Prayer Photo'
+        },
+        {
+          id: 'g-9',
+          category: 'mandir',
+          titleHi: 'सोना अर्जुनपुर गांव की धरा',
+          titleEn: 'Sona Arjunpur Heritage Landscape',
+          descHi: 'सहारनपुर जनपद का वह ऐतिहासिक गांव जो बाबा सिद्ध जी की तपोस्थली के रूप में प्रसिद्ध है।',
+          descEn: 'The peaceful rural heritage and environment of Sona Arjunpur village.',
+          labelHi: 'सोना अर्जुनपुर गांव परिदृश्य छायाचित्र',
+          labelEn: 'Sona Arjunpur Village Landscape'
+        }
+      ];
+
+      // Application State
+      let currentLang = localStorage.getItem('babasiddh_lang') || 'hi';
+      let prayers = JSON.parse(localStorage.getItem('babasiddh_prayers')) || INITIAL_PRAYERS;
+      let templeInfo = JSON.parse(localStorage.getItem('babasiddh_info')) || DEFAULT_TEMPLE_INFO;
+      let activeCategory = 'all';
+
+      // 2. TEMPLE BELL AUDIO SYNTHESIZER (VANILLA WEB AUDIO API)
+      let audioCtx = null;
+      function playTempleBell() {
+        try {
+          if (!audioCtx) {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (AudioContextClass) {
+              audioCtx = new AudioContextClass();
+            }
+          }
+          if (audioCtx && audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+
+          // Trigger visual bell ring animation on icons
+          const bellIcons = [document.getElementById('bell-icon'), document.getElementById('float-bell-icon')];
+          bellIcons.forEach(icon => {
+            if (icon) {
+              icon.classList.remove('ringing');
+              void icon.offsetWidth; // Force reflow
+              icon.classList.add('ringing');
+              setTimeout(() => icon.classList.remove('ringing'), 900);
+            }
+          });
+
+          if (!audioCtx) return;
+
+          // Authentic Indian Temple Bell Harmonic Synthesis
+          // Frequencies based on brass ghanta acoustic measurements
+          const fundamental = 587.33; // D5
+          const partials = [
+            { freqRatio: 1.0, gain: 0.8, decay: 3.2 },
+            { freqRatio: 1.414, gain: 0.5, decay: 2.8 },
+            { freqRatio: 2.0, gain: 0.45, decay: 2.3 },
+            { freqRatio: 2.76, gain: 0.35, decay: 1.9 },
+            { freqRatio: 4.07, gain: 0.25, decay: 1.4 },
+            { freqRatio: 5.42, gain: 0.15, decay: 0.9 },
+          ];
+
+          const now = audioCtx.currentTime;
+          const masterGain = audioCtx.createGain();
+          masterGain.gain.setValueAtTime(0.7, now);
+          masterGain.connect(audioCtx.destination);
+
+          partials.forEach(p => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(fundamental * p.freqRatio, now);
+
+            gain.gain.setValueAtTime(0, now);
+            // Sharp bell strike attack
+            gain.gain.linearRampToValueAtTime(p.gain, now + 0.008);
+            // Resonant exponential ring decay
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + p.decay);
+
+            osc.connect(gain);
+            gain.connect(masterGain);
+
+            osc.start(now);
+            osc.stop(now + p.decay);
+          });
+
+        } catch (e) {
+          console.warn("Temple bell audio context error:", e);
+        }
+      }
+
+      // 3. LANGUAGE TOGGLE & TRANSLATION SYSTEM
+      function toggleLanguage() {
+        currentLang = currentLang === 'hi' ? 'en' : 'hi';
+        localStorage.setItem('babasiddh_lang', currentLang);
+        applyLanguage();
+      }
+
+      function applyLanguage() {
+        const isHi = currentLang === 'hi';
+        document.documentElement.lang = isHi ? 'hi' : 'en';
+
+        // Language toggle button label
+        document.getElementById('lang-btn-label').textContent = isHi ? 'English' : 'हिंदी';
+
+        // Header & Notice
+        document.getElementById('txt-notice-tag').textContent = isHi ? 'सूचना' : 'Notice';
+        document.getElementById('notice-content').textContent = isHi ? templeInfo.noticeHi : templeInfo.noticeEn;
+        document.getElementById('nav-brand-title').textContent = isHi ? 'श्री बाबा सिद्ध मंदिर' : 'Shri Baba Siddh Mandir';
+        document.getElementById('nav-brand-subtitle').textContent = isHi ? 'सोना अर्जुनपुर, सहारनपुर (उ.प्र.)' : 'Sona Arjunpur, Saharanpur (U.P.)';
+
+        // Nav items
+        document.getElementById('nav-item-overview').textContent = isHi ? 'मंदिर परिचय' : 'Overview';
+        document.getElementById('nav-item-history').textContent = isHi ? 'इतिहास व परंपरा' : 'History & Tradition';
+        document.getElementById('nav-item-sarovar').textContent = isHi ? 'पवित्र सरोवर' : 'Sacred Sarovar';
+        document.getElementById('nav-item-mela').textContent = isHi ? 'वार्षिक मेला' : 'Annual Mela';
+        document.getElementById('nav-item-gallery').textContent = isHi ? 'दर्शन छायाचित्र' : 'Photo Darshan';
+        document.getElementById('nav-item-education').textContent = isHi ? 'शिक्षा संस्थान' : 'Education';
+        document.getElementById('nav-item-prayers').textContent = isHi ? 'मनोकामना पटल' : 'Prayer Wall';
+        document.getElementById('nav-item-travel').textContent = isHi ? 'यात्रा मार्ग' : 'Transit Route';
+
+        // Hero
+        document.getElementById('hero-live-status').textContent = isHi ? 'दर्शन जारी है: प्रातः 05:00 — रात्रि 08:30' : 'Open for Darshan: 05:00 AM — 08:30 PM';
+        document.getElementById('hero-title').textContent = isHi ? 'श्री बाबा सिद्ध मंदिर' : 'Shri Baba Siddh Mandir';
+        document.getElementById('hero-subtitle').textContent = isHi ? 'सोना अर्जुनपुर, जनपद सहारनपुर (उत्तर प्रदेश)' : 'Sona Arjunpur, District Saharanpur (Uttar Pradesh)';
+        document.getElementById('hero-quote').textContent = isHi 
+          ? '"जहाँ सदियों पुरानी तपस्या, अखंड विश्वास और सिद्ध साधना की पवित्र धारा आज भी प्रत्येक श्रद्धालु को असीम शांति व संबल प्रदान करती है।"'
+          : '"Where centuries of penance, unwavering faith, and sacred spiritual practice continue to bestow peace and divine solace upon every devotee."';
+
+        document.getElementById('pillar-1').textContent = isHi ? 'प्राचीन समाधि स्थल' : 'Sacred Samadhi Sthal';
+        document.getElementById('pillar-2').textContent = isHi ? 'बाबा सिद्ध सरोवर' : 'Holy Baba Siddh Sarovar';
+        document.getElementById('pillar-3').textContent = isHi ? 'आषाढ़-सावन मेला' : 'Annual Weekend Mela';
+        document.getElementById('pillar-4').textContent = isHi ? 'सोना अर्जुनपुर स्टेशन' : 'Sona Arjunpur Station';
+
+        // Overview
+        document.getElementById('ov-tag').textContent = isHi ? 'आस्था एवं समय सारणी' : 'Faith & Timings';
+        document.getElementById('ov-title').textContent = isHi ? 'मंदिर परिचय एवं दैनिक दर्शन' : 'Temple Overview & Daily Darshan';
+        document.getElementById('ov-desc').textContent = isHi 
+          ? 'सोना अर्जुनपुर गांव में स्थित श्री बाबा सिद्ध मंदिर पश्चिमी उत्तर प्रदेश के सहारनपुर जनपद का एक परम पावन तीर्थ है।'
+          : 'Located in Sona Arjunpur village, Shri Baba Siddh Mandir is a sanctified pilgrimage center in Saharanpur district, Western Uttar Pradesh.';
+        
+        document.getElementById('ov-val-daily').textContent = isHi ? templeInfo.dailyHoursHi : templeInfo.dailyHoursEn;
+
+        // Render gallery with updated language
+        renderGallery();
+        renderPrayers();
+      }
+
+      // 4. NOTICE BANNER TOGGLE
+      document.getElementById('btn-toggle-notice').addEventListener('click', () => {
+        const banner = document.getElementById('notice-banner');
+        banner.style.display = 'none';
+      });
+
+      // 5. MOBILE MENU
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+        const isOpen = !menu.classList.contains('hidden');
+
+        if (isOpen) {
+          menu.classList.add('hidden');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+        } else {
+          menu.classList.remove('hidden');
+          iconOpen.classList.add('hidden');
+          iconClose.classList.remove('hidden');
+        }
+      }
+
+      function closeMobileMenu() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+        document.getElementById('menu-icon-open').classList.remove('hidden');
+        document.getElementById('menu-icon-close').classList.add('hidden');
+      }
+
+      // 6. GALLERY & LIGHTBOX
+      function filterGallery(cat) {
+        activeCategory = cat;
+        document.querySelectorAll('.gal-filter-btn').forEach(btn => {
+          if (btn.getAttribute('data-cat') === cat) {
+            btn.className = 'gal-filter-btn px-4 py-1.5 rounded-full bg-saffron-600 text-white font-medium shadow-sm transition';
+          } else {
+            btn.className = 'gal-filter-btn px-4 py-1.5 rounded-full bg-amber-100 text-maroon-900 font-medium hover:bg-amber-200 transition';
+          }
+        });
+        renderGallery();
+      }
+
+      function renderGallery() {
+        const grid = document.getElementById('gallery-grid');
+        const isHi = currentLang === 'hi';
+        const filtered = activeCategory === 'all' 
+          ? GALLERY_DATA 
+          : GALLERY_DATA.filter(item => item.category === activeCategory);
+
+        grid.innerHTML = filtered.map(item => `
+          <div 
+            onclick="openLightbox('${item.id}')"
+            class="group bg-[#FFFDF9] rounded-2xl overflow-hidden border border-amber-200/90 shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 cursor-pointer flex flex-col justify-between"
+          >
+            <div class="aspect-video bg-gradient-to-br from-amber-100 via-amber-50 to-amber-200/50 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden border-b border-amber-200">
+              <i data-lucide="image" class="w-10 h-10 text-saffron-500/70 mb-2 group-hover:scale-110 transition"></i>
+              <span class="text-xs font-semibold text-amber-900 font-hindi">
+                ${isHi ? item.labelHi : item.labelEn}
+              </span>
+              <div class="absolute bottom-2 right-2 bg-black/50 text-white p-1 rounded-md opacity-0 group-hover:opacity-100 transition">
+                <i data-lucide="zoom-in" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-maroon-950 font-hindi text-base mb-1">
+                ${isHi ? item.titleHi : item.titleEn}
+              </h4>
+              <p class="text-xs text-stone-600 font-hindi line-clamp-2">
+                ${isHi ? item.descHi : item.descEn}
+              </p>
+            </div>
+          </div>
+        `).join('');
+
+        // Re-initialize Lucide Icons for injected elements
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      }
+
+      function openLightbox(id) {
+        const item = GALLERY_DATA.find(g => g.id === id);
+        if (!item) return;
+        const isHi = currentLang === 'hi';
+
+        document.getElementById('lightbox-title').textContent = isHi ? item.titleHi : item.titleEn;
+        document.getElementById('lightbox-desc').textContent = isHi ? item.descHi : item.descEn;
+        document.getElementById('lightbox-placeholder-text').textContent = isHi ? item.labelHi : item.labelEn;
+        document.getElementById('lightbox-modal').classList.remove('hidden');
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox-modal').classList.add('hidden');
+      }
+
+      // 7. DEVOTIONAL PRAYER WALL (MANOKAMNA PATAL)
+      function handlePrayerSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('p-name').value.trim();
+        const village = document.getElementById('p-village').value.trim();
+        const msg = document.getElementById('p-msg').value.trim();
+
+        if (!name || !village || !msg) return;
+
+        const newPrayer = {
+          id: 'p-' + Date.now(),
+          name: name,
+          villageCity: village,
+          prayer: msg,
+          timestamp: new Date().toISOString().split('T')[0],
+          approved: true // Auto-approved for joyful user interaction, can be moderated in admin
+        };
+
+        prayers.unshift(newPrayer);
+        localStorage.setItem('babasiddh_prayers', JSON.stringify(prayers));
+
+        // Reset form
+        document.getElementById('prayer-form').reset();
+        const alertBox = document.getElementById('prayer-success-alert');
+        alertBox.classList.remove('hidden');
+        setTimeout(() => alertBox.classList.add('hidden'), 5000);
+
+        renderPrayers();
+      }
+
+      function renderPrayers() {
+        const container = document.getElementById('prayers-list-container');
+        const countBadge = document.getElementById('prayer-count-badge');
+        const approved = prayers.filter(p => p.approved);
+        
+        countBadge.textContent = `${approved.length} ${currentLang === 'hi' ? 'संदेश' : 'Prayers'}`;
+
+        if (approved.length === 0) {
+          container.innerHTML = `
+            <div class="bg-white p-6 rounded-xl border border-amber-200 text-center text-stone-500 font-hindi">
+              अभी कोई प्रार्थना उपलब्ध नहीं है। प्रथम प्रार्थना आप समर्पित करें।
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = approved.map(p => `
+          <div class="bg-white p-4 sm:p-5 rounded-xl border border-amber-200/90 shadow-sm font-hindi">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-saffron-100 text-saffron-800 font-bold text-xs flex items-center justify-center">
+                  ${p.name.charAt(0)}
+                </div>
+                <div>
+                  <strong class="text-maroon-950 text-sm block">${p.name}</strong>
+                  <span class="text-xs text-amber-800 font-medium">${p.villageCity}</span>
+                </div>
+              </div>
+              <span class="text-[11px] text-stone-400">${p.timestamp}</span>
+            </div>
+            <p class="text-stone-700 text-sm leading-relaxed border-l-2 border-saffron-400 pl-3 italic">
+              "${p.prayer}"
+            </p>
+          </div>
+        `).join('');
+      }
+
+      // 8. ADMIN PORTAL MODAL
+      function openAdminModal() {
+        document.getElementById('admin-notice-input').value = templeInfo.noticeHi;
+        document.getElementById('admin-daily-hours').value = templeInfo.dailyHoursHi;
+        document.getElementById('admin-aarti-timings').value = templeInfo.aartiHi;
+
+        renderAdminPrayersList();
+        document.getElementById('admin-modal').classList.remove('hidden');
+        if (window.lucide) window.lucide.createIcons();
+      }
+
+      function closeAdminModal() {
+        document.getElementById('admin-modal').classList.add('hidden');
+      }
+
+      function renderAdminPrayersList() {
+        const list = document.getElementById('admin-prayers-list');
+        document.getElementById('admin-prayers-count').textContent = `कुल: ${prayers.length}`;
+
+        list.innerHTML = prayers.map(p => `
+          <div class="flex items-center justify-between p-2.5 bg-stone-50 rounded-lg border border-stone-200 text-xs">
+            <div class="truncate max-w-[70%]">
+              <strong>${p.name} (${p.villageCity}):</strong>
+              <span class="text-stone-600 truncate block">"${p.prayer}"</span>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="toggleApprovePrayer('${p.id}')" class="px-2 py-1 rounded font-bold ${p.approved ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-200 text-amber-900'}">
+                ${p.approved ? 'स्वीकृत' : 'अस्वीकृत'}
+              </button>
+              <button onclick="deletePrayer('${p.id}')" class="text-rose-600 hover:text-rose-800 p-1">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        `).join('');
+
+        if (window.lucide) window.lucide.createIcons();
+      }
+
+      function toggleApprovePrayer(id) {
+        const p = prayers.find(item => item.id === id);
+        if (p) {
+          p.approved = !p.approved;
+          localStorage.setItem('babasiddh_prayers', JSON.stringify(prayers));
+          renderAdminPrayersList();
+          renderPrayers();
+        }
+      }
+
+      function deletePrayer(id) {
+        prayers = prayers.filter(item => item.id !== id);
+        localStorage.setItem('babasiddh_prayers', JSON.stringify(prayers));
+        renderAdminPrayersList();
+        renderPrayers();
+      }
+
+      function saveAdminSettings() {
+        templeInfo.noticeHi = document.getElementById('admin-notice-input').value.trim() || templeInfo.noticeHi;
+        templeInfo.dailyHoursHi = document.getElementById('admin-daily-hours').value.trim() || templeInfo.dailyHoursHi;
+        templeInfo.aartiHi = document.getElementById('admin-aarti-timings').value.trim() || templeInfo.aartiHi;
+
+        localStorage.setItem('babasiddh_info', JSON.stringify(templeInfo));
+        applyLanguage();
+        closeAdminModal();
+      }
+
+      function resetToDefaults() {
+        if (confirm("क्या आप सभी सेटिंग्स को डिफ़ॉल्ट पर रीसेट करना चाहते हैं?")) {
+          localStorage.removeItem('babasiddh_info');
+          localStorage.removeItem('babasiddh_prayers');
+          templeInfo = { ...DEFAULT_TEMPLE_INFO };
+          prayers = [...INITIAL_PRAYERS];
+          applyLanguage();
+          closeAdminModal();
+        }
+      }
+
+      // 9. INITIALIZATION
+      window.addEventListener('DOMContentLoaded', () => {
+        applyLanguage();
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      });
+    </script>
   </body>
 </html>
-
